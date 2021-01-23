@@ -54,7 +54,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/naming-convention': 'off',
-    'object-curly-newline': ['off', {
+    'object-curly-newline': ['off', { // TODO: prettier와 상충하지 않는 룰 찾기
       'ObjectExpression': { 'multiline': true, 'minProperties': 4 },
       'ObjectPattern': { 'multiline': true, 'minProperties': 4 },
       'ImportDeclaration': { 'multiline': true, 'minProperties': 4 },
