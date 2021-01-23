@@ -5,12 +5,13 @@ const theme = createMuiTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          padding: '8px 24px 24px 24px',
           backgroundColor: '#1a24b8',
           color: '#ffffff',
         },
         '#root': {
-          width: '100%',
+          width: 900,
+          paddingTop: 32,
+          margin: '0 auto',
           display: 'flex',
           flexDirection: 'column',
           wrap: 'nowrap',

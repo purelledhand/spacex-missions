@@ -1,0 +1,10 @@
+.title {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+  &:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

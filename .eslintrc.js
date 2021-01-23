@@ -53,7 +53,8 @@ module.exports = {
     ],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'object-curly-newline': ['error', {
+    '@typescript-eslint/naming-convention': 'off',
+    'object-curly-newline': ['off', {
       'ObjectExpression': { 'multiline': true, 'minProperties': 4 },
       'ObjectPattern': { 'multiline': true, 'minProperties': 4 },
       'ImportDeclaration': { 'multiline': true, 'minProperties': 4 },

@@ -1,6 +1,6 @@
 import { gql } from 'apollo-boost';
 
-const getLaunches = gql`
+const GET_LAUNCHES = gql`
   {
     launches {
       id
@@ -20,4 +20,4 @@ const getLaunches = gql`
   }
 `;
 
-export default getLaunches;
+export default GET_LAUNCHES;
