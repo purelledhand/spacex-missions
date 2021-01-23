@@ -12,6 +12,7 @@ export interface Link {
 interface Launch {
   id: string;
   rocket: Rocket;
+  mission_id: string;
   mission_name: string;
   launch_date_local: string;
   links: Link;

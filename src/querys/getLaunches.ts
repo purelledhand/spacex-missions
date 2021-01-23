@@ -8,6 +8,7 @@ const getLaunches = gql`
         rocket_name
         rocket_type
       }
+      mission_id
       mission_name
       launch_date_local
       links {
