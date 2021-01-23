@@ -1,16 +1,23 @@
+const path = require('path');
+
 module.exports = {
   root: true,
   env: {
     node: true,
     browser: true,
   },
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: [
+    'airbnb-typescript',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'eslint:recommended',
+    'plugin:react/recommended',
+  ],
   plugins: ['prettier'],
   rules: {
     'no-console': 'off',
+    'camelcase': 'off',
     'import/extensions': 'off',
-    'import/first': 'error',
-    'import/resolver': { 'node': { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] } },
     'import/order': [
       'warn',
       {
@@ -44,6 +51,8 @@ module.exports = {
         ignoreMemberSort: false,
       },
     ],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
     'react/jsx-filename-extension': [
       0,
       { extensions: ['.js', 'jsx', '.ts', '.tsx'] },
@@ -62,7 +71,28 @@ module.exports = {
     ],
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    project: 'tsconfig.json'
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+        node: {
+            paths: [path.resolve(__dirname, 'src')],
+        },
+    },
+  },
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'import',
+    'react-hooks'
+  ],
   ignorePatterns: ['node_modules/'],
 };

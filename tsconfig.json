@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "baseUrl": ".",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
     ],
+    "baseUrl": "./src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,9 +20,12 @@
     "isolatedModules": true,
     "incremental": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
