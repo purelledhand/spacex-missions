@@ -53,6 +53,13 @@ module.exports = {
     ],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
+    'object-curly-newline': ['error', {
+      'ObjectExpression': { 'multiline': true, 'minProperties': 4 },
+      'ObjectPattern': { 'multiline': true, 'minProperties': 4 },
+      'ImportDeclaration': { 'multiline': true, 'minProperties': 4 },
+      'ExportDeclaration': { 'multiline': true, 'minProperties': 4 }
+    }],
+    'react/prop-types': ['off'],
     'react/jsx-filename-extension': [
       0,
       { extensions: ['.js', 'jsx', '.ts', '.tsx'] },
