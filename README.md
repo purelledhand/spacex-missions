@@ -15,8 +15,8 @@ yarn start
 ### What I Learned in GQL
 
 * 쿼리와 뮤테이션
-  * 쿼리: C
-  * 뮤테이션 :  RUD
+  * 쿼리: R
+  * 뮤테이션 :  CUD
 
 * 일반 쿼리와 오퍼레이션 네임 쿼리
   * 일반 쿼리 : 변수가 없는 static한 쿼리 (start with curly-braces)
