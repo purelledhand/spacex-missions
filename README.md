@@ -1,5 +1,8 @@
 ## SpaceX Missions
+
 🚀 See Missions of SpaceX
+
+👩🏻‍💻  Repo for study purposes - React-hooks + TypeScript + Apollo Client + GraphQL
 
 ![home](./assets/home.png)
 ![detail1](./assets/detail1.png)
